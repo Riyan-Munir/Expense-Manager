@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container container-main">
+            <h1>
+                Welcome to Expense Management System
+            </h1>
+        </div>
+        <div class="container">
+            <h1>Expense Manager By Riyan</h1>
+            
+            <div class="expense-form">
+                <div class="box">
+                    <i class="fa-light fa-money-bill-1"></i>
+                   <input type="number" id="amount" placeholder="Amount" required>
+                </div>
+                <div class="box">
+                    <i class="fa-light fa-list"></i>
+                    <input type="text" id="category" placeholder="Category" required>
+                </div>
+                <div class="box">
+                    <i class="fa-light fa-input-text"></i>
+                    <input type="text" id="description" placeholder="Description">
+                </div>
+                <button onclick="addExpense()">Add Expense</button>
+            </div>
+    
+            <h2>Total: $<span id="total">0</span></h2>
+    
+            <ul id="expense-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
